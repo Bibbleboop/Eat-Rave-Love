@@ -10,15 +10,17 @@ const ReactFooter=()=>{
                 <div className="footer-links">
                     <div className="footer-links_div">
                         <h3>Contact Us :</h3>
-                        <a href="#"></a>
-                        <p>email/form</p>
-                    </div>
+                        <a href="">GitHub</a>
+                       
 
+                    </div>
                     <div className="footer-links_div">
                         <h3>Coming Soon To :</h3>
-                        <p>Facebook</p>
-                        <p>Twitter</p>
-                        <p>Instagram</p>
+                        <div className="social-media">
+                            <p>Facebook</p>
+                            <p>Twitter</p>
+                            <p>Instagram</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,8 +28,8 @@ const ReactFooter=()=>{
 
             <div className="footer-bottom">
                 <div className="footer-copyright">
-                    <p>
-                        @{new Date().getFullYear()} Star RISE. All rights reserved.
+                    <p className="">
+                        @{new Date().getFullYear()} Eat-Rave-Love. All rights reserved.
                     </p>
                 </div>
                 <div className="footer-terms">
