@@ -8,21 +8,20 @@ const ReactFooter=()=>{
         <div className="footer">
             <div className="footer section_padding">
                 <div className="footer-links">
-                    <div className="footer-links-div">
-                        <h3>Contact Us</h3>
+                    <div className="footer-links_div">
+                        <h3>Contact Us :</h3>
                         <a href="#"></a>
                         <p>email/form</p>
                     </div>
+
+                    <div className="footer-links_div">
+                        <h3>Coming Soon To :</h3>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                        <p>Instagram</p>
+                    </div>
                 </div>
             </div>
-            <div className="footer-links_div">
-                <h3>Coming Soon On :</h3>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Instagram</p>
-                <p></p>
-            </div>
-
             <hr></hr>
 
             <div className="footer-bottom">
