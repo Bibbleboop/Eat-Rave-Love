@@ -58,36 +58,6 @@ const ReactFooter=()=>{
                 </div>
             </div>
             <hr></hr>
-
-            <div className="footer-bottom">
-                <div className="footer-copyright">
-                    <p className="">
-                        @{new Date().getFullYear()} Eat-Rave-Love. All rights reserved.
-                    </p>
-                </div>
-                <div className="footer-terms">
-                    <a href="/terms">
-                        <div>
-                            <p>Terms & Conditions</p>    
-                        </div>
-                    </a>
-                    <a href="/privacy">
-                        <div>
-                            <p>Privacy</p>    
-                        </div>
-                    </a>
-                    <a href="/security">
-                        <div>
-                            <p>Security</p>    
-                        </div>
-                    </a>
-                    <a href="/cookies">
-                        <div>
-                            <p>Cookies declaration</p>    
-                        </div>
-                    </a>
-                </div>
-            </div>
         </footer>
     )
 }
