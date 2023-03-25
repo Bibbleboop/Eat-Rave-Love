@@ -37,6 +37,21 @@ const ReactFooter=()=>{
                             <p>Terms & Conditions</p>    
                         </div>
                     </a>
+                    <a href="/privacy">
+                        <div>
+                            <p>Privacy</p>    
+                        </div>
+                    </a>
+                    <a href="/security">
+                        <div>
+                            <p>Security</p>    
+                        </div>
+                    </a>
+                    <a href="/cookies">
+                        <div>
+                            <p>Cookies declaration</p>    
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
