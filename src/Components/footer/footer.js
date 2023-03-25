@@ -1,22 +1,22 @@
 import React from "react";
-import "../footer.css";
+import "./footer.css";
 
 
 
-const footer=()=>{
+const ReactFooter=()=>{
     return (
         <div className="footer">
             <div className="footer section_padding">
                 <div className="footer-links">
                     <div className="footer-links-div">
-                        <h4>Contact Us</h4>
+                        <h3>Contact Us</h3>
                         <a href="#"></a>
                         <p>email/form</p>
                     </div>
                 </div>
             </div>
             <div className="footer-links_div">
-                <h2>Coming soon on</h2>
+                <h3>Coming Soon On :</h3>
                 <p>Facebook</p>
                 <p>Twitter</p>
                 <p>Instagram</p>
@@ -43,4 +43,4 @@ const footer=()=>{
     )
 }
 
-export default footer;
+export default ReactFooter;
