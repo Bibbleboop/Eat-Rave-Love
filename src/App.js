@@ -1,3 +1,5 @@
+import './App.css';
+import ReactFooter from '../src/Components/footer/footer'
 import React from 'react';
 import SearchBar from './SearchBar';
 
@@ -8,6 +10,7 @@ function App() {
       <div className="container mx-auto my-4">
         <SearchBar />
       </div>
+      <ReactFooter />
     </div>
   );
 }
