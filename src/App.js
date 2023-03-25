@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import SearchBar from './SearchBar';
+import SearchBar from './Components/searchbar/SearchBar';
 import ReactFooter from '../src/Components/footer/footer'
 
 function App() {
