@@ -11,3 +11,4 @@ image(s) goes here
 
 
 # License
+MIT License
