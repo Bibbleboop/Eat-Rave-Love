@@ -29,7 +29,7 @@ const ReactFooter=()=>{
             <div className="footer-bottom">
                 <div className="footer-copyright">
                     <p className="">
-                        @{new Date().getFullYear()} Eat-Rave-Love. All rights reserved.
+                       
                     </p>
                 </div>
                 <div className="footer-terms">
