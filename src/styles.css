@@ -1,18 +1,20 @@
-body {
-    margin: 0;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-
-code {
-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.background-contactus {
+  backgroundColor: #1F2833;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 :root { 
     --font1: #000000; /*Black */
@@ -32,3 +34,11 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 
 } 
 
+.form {
+  margin: 5px;
+  border: solid 2px #1F2833;
+  } 
+.textarea {
+    margin: 5px;
+    border: solid 2px #1F2833; 
+  } 

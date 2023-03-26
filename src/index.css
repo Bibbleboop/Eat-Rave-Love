@@ -9,7 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.background-contactus {
+  backgroundColor: #1F2833;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -32,3 +34,11 @@ code {
 
 } 
 
+.form {
+  margin: 5px;
+  border: solid 2px #1F2833;
+  } 
+.textarea {
+    margin: 5px;
+    border: solid 2px #1F2833; 
+  } 

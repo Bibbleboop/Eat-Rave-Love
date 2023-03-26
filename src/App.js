@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -5,23 +6,23 @@ import SearchResults from './components/SearchResults';
 import SearchBar from './components/SearchBar';
 import ContactUs from './components/ContactUs';
 
-
 function App() {
   return (
     <>
-      <Header />
+      <Header /> 
 
-      <Main />
+    <Main />  
 
-      <SearchBar />
+    <SearchBar /> 
       
       <SearchResults />
       <SearchResults />
       <SearchResults />
 
-    <ContactUs />
+      <ContactUs />
 
-      <Footer />
+      <Footer /> 
+
     </>
   );
 }
