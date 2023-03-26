@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 6afe2aff9357c4fad43048c776a105539da91460
- 
 const webpack = require('webpack'); 
 module.exports = function override(config) { 
 		const fallback = config.resolve.fallback || {}; 
@@ -23,7 +18,3 @@ module.exports = function override(config) {
     }) 
    ]) 
    return config; }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6afe2aff9357c4fad43048c776a105539da91460
