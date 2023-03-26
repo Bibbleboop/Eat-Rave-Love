@@ -6,5 +6,4 @@ function SearchResults() {
         </SearchResults>
     )
 }
-
 export default SearchResults;

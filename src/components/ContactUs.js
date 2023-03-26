@@ -1,6 +1,18 @@
 import {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
+let styles = {
+    
+    header: {
+        textAlign: 'centre',
+        margin: '10px'
+    },
+    submitBtn: {
+        backgroundColor: '#DA7B93',
+        color: '#376e6f'
+    }
+
+};
 function ContactUs() {
     let [formData, setFormData] = useState({
         name: '',
@@ -22,7 +34,7 @@ function ContactUs() {
     return (
         <>
         <h2 style={styles.header}>Contact Us</h2>
-        <p> Sign up for our Exclusive Mailer</p>
+        {/* <p> Sign up for our Exclusive Mailer</p> */}
         <form onSubmit={handleSubmit}>
             <input name='name' onChange={handleChange}
             type="text" placeholder="Your Name" />
@@ -36,3 +48,4 @@ function ContactUs() {
     }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ContactUs/>);
+export default ContactUs;

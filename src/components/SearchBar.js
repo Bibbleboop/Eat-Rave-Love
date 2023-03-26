@@ -6,5 +6,4 @@ function SearchBar() {
 </SearchBar>
     )
 }
-
 export default SearchBar;
