@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import SearchBar from './SearchBar';
 import ReactFooter from '../src/Components/footer/footer'
 

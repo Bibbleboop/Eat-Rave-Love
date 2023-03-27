@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SerpApi from 'google-search-results-nodejs';
+//import SerpApi from 'google-search-results-nodejs';
 import Card from './Card';
 
 function SearchBar() {
@@ -7,7 +7,7 @@ function SearchBar() {
   const [results, setResults] = useState([]);
 
 const search = () => {
-  const search = new SerpApi.GoogleSearch("99e862960da1f6c3c8cfcc8f6ba4f35968cee4846f4411a8a8e75b8e697c3d9e");
+  //const search = new SerpApi.GoogleSearch("99e862960da1f6c3c8cfcc8f6ba4f35968cee4846f4411a8a8e75b8e697c3d9e");
   const params = {
         q: query,
     engine: "google_events"
