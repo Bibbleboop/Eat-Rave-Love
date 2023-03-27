@@ -9,6 +9,8 @@ https://eat-rave-love.netlify.app/
 Screenshot:
 image(s) goes here
 
+# Contributors:
+
 
 # License
 MIT License
