@@ -1,9 +1,9 @@
 import React from 'react';
-import SearchBar from './Components/searchbar/SearchBar';
-import ReactFooter from './Components/footer/ReactFooter';
-import Header from './Components/header/Header';
-import Main from './Components/main/Main';
-import ContactUs from './Components/contactus/ContactUs';
+import SearchBar from './components/searchbar/searchbar';
+import ReactFooter from './components/footer/ReactFooter';
+import Header from './components/header/Header';
+import Main from './components/main/Main.js';
+import ContactUs from './components/contactus/ContactUs';
 
 function App() {
   return (
