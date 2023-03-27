@@ -1,37 +1,30 @@
 import React from "react";
 
-const ReactFooter=()=>{
+const ReactFooter=()=> {
     return (
         <footer class="py-6 dark:bg-gray-800 dark:text-gray-50">
             <div class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
                 <div class="grid grid-cols-12">
                     <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
-                        <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 md:justify-start">
-                        <div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
+                        <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 md:justify-start"><div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
                                 <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
                             </svg>
-                        </div>
-                        <span class="self-center text-2xl font-semibold">Brand name</span>
-                    </a>
+                            <span class="self-center text-2xl font-semibold">Eat-Rave-Love</span>
+                        </a>
+                   </div>
                 </div>
                 <div class="col-span-6 text-center md:text-left md:col-span-3">
-                    <p class="pb-1 text-lg font-medium">Category</p>
+                    <p class="pb-1 text-lg font-medium">Contact Us</p>
                     <ul>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Link</a>
+                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">1-800-EAT-RAVE-LOVE</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Link</a>
+                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">info@eat-rave-love.org</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Link</a>
+                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Form</a>
                         </li>
                     </ul>
                 </div>
@@ -39,19 +32,19 @@ const ReactFooter=()=>{
                     <p class="pb-1 text-lg font-medium">Contributors</p>
                     <ul>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Nicola Cahill</a>
+                            <a rel="noopener noreferrer" href="https://github.com/Bibbleboop" class="hover:dark:text-violet-400">Nicola</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Daniela</a>
+                            <a rel="noopener noreferrer" href="https://github.com/Dani-Her" class="hover:dark:text-violet-400">Daniela</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Chaitanya</a>
+                            <a rel="noopener noreferrer" href="https://github.com/curioushumans" class="hover:dark:text-violet-400">Chaitanya</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Aleeza</a>
+                            <a rel="noopener noreferrer" href="https://github.com/babyleezus" class="hover:dark:text-violet-400">Aleeza</a>
                         </li>
                         <li>
-                            <a rel="noopener noreferrer" href="#" class="hover:dark:text-violet-400">Renee</a>
+                            <a rel="noopener noreferrer" href="https://github.com/ReneeDanielleB" class="hover:dark:text-violet-400">Renee</a>
                         </li>
                     </ul>
                 </div>
@@ -64,6 +57,9 @@ const ReactFooter=()=>{
                     </a>
                     <a rel="noopener noreferrer" href="#">
                         <span>Terms of service</span>
+                    </a>
+                    <a rel="noopener noreferrer" href="#">
+                        <span>Cookies</span>
                     </a>
                 </div>
                 <div class="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
@@ -85,7 +81,6 @@ const ReactFooter=()=>{
                     </a>
                 </div>
             </div>
-        </div>
         </footer>
     )
 }
