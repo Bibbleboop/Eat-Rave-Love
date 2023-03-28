@@ -4,6 +4,8 @@ import ReactFooter from './components/footer/footer';
 import Header from './components/Header';
 import Main from './components/Main';
 import ContactUs from './components/ContactUs';
+import faves from './components/faves/favBtn';
+// import Favourites from
 
 function App() {
   return (
@@ -14,10 +16,10 @@ function App() {
         <div className="container mx-auto my-4">
           <SearchBar />
         </div>
+        <faves />
       <ContactUs />
-        <container className="text-3x1 text-center text-cyan-600 col3">
 
-        </container>
+      
       <ReactFooter />
     </div>
   );
