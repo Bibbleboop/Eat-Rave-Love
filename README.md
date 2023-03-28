@@ -1,4 +1,5 @@
 # Eat-Rave-Love
+This is a 
 
 User Story:
 As a traveller, I would like to access all the information on local events and restaurants happening in my city of choice! 
@@ -17,6 +18,11 @@ image(s) goes here
 - Aleeza Malik @babyleezus
 - Chaitanya Varma @curioushumans
 - Renee Buchanan @ReneeDanielleB
+
+
+# Technologies Used
+- React
+- Netlify
 
 
 # License
