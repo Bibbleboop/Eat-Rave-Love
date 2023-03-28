@@ -2,14 +2,20 @@ import {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
 let styles = {
-    
-    header: {
-        textAlign: 'centre',
-        margin: '10px'
+        header: {
+        textAlign: 'left',
+        margin: '18px 5px',
+        border: '5px #376e6f',
     },
     submitBtn: {
         backgroundColor: '#DA7B93',
         color: '#376e6f'
+    },
+    form: {
+        margin: '7px',
+        border: '4px solid #9FA0FF',
+        padding: '5px 9px',
+        outline: 'none',
     }
 
 };

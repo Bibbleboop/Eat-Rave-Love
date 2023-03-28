@@ -15,6 +15,9 @@ function App() {
           <SearchBar />
         </div>
       <ContactUs />
+        <container className="text-3x1 text-center text-cyan-600 col3">
+
+        </container>
       <ReactFooter />
     </div>
   );
