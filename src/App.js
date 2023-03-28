@@ -1,25 +1,30 @@
-import React from 'react';
-import SearchBar from './components/searchbar/searchbar.js';
-import ReactFooter from './components/footer/footer';
-import Header from './components/Header';
-import Main from './components/Main';
-import ContactUs from './components/ContactUs';
-import faves from './components/faves/favBtn';
-// import Favourites from
+import React, { useState } from 'react';
+import ReactFooter from './Components/footer/ReactFooter';
+// import Header from './Components/header/Header';
+// import Main from './Components/main/Main';
+import SearchBar from './Components/searchbar/SearchBar'
+// import ContactUs from './Components/contactus/ContactUs';
+
 
 function App() {
+  const [setFilter] = useState('');
+
+  const handleSearchInputChange = (event) => {
+    setFilter(event.target.value);
+  }
+
   return (
     <div className="App">
-      <Header /> 
-      <Main />  
-        <h1 className="text-3xl text-center text-cyan-600 m-6">Search Events, Clubs, Raves & much more!</h1>
-        <div className="container mx-auto my-4">
-          <SearchBar />
+      {/* <Header /> 
+      <Main />   */}
+      <h1 className="text-3xl text-center text-cyan-600 m-6">Search Events, Clubs, Raves & much more!</h1>
+      <div>
+        <input type="text" id="search-input" onChange={handleSearchInputChange}></input>
+        <div className="container mx-auto my-4 flex flex-col">
+          <SearchBar setFilter={setFilter} />
         </div>
-        <faves />
-      <ContactUs />
-
-      
+      </div>
+      {/* <ContactUs /> */}
       <ReactFooter />
     </div>
   );

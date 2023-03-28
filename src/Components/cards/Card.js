@@ -1,23 +1,28 @@
 import React from 'react';
 
-function Card({ title, date, address, link, image }) {
+function Card({ title, date, address, link, image, description }) {
   return (
-    <div className="max-w-md mx-auto my-4 rounded overflow-hidden shadow-lg">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img className="w-full h-48 object-cover" src={image} alt={title} />
-      </a>
-      <div className="px-6 py-4">
-        <a className="text-black" href={link} target="_blank" rel="noopener noreferrer">
-          <div className="font-bold text-xl mb-2 text-black-400">{title}</div>
+    <div className="w-full mx-auto my-4 rounded overflow-hidden shadow-lg flex">
+      <div className="w-1/3">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className="w-full h-48 object-cover" src={image} alt={title} />
         </a>
-      {date && (
-        <p className="text-gray-700 text-base">{date.when} - {date.start_date}</p>
-      )}
-      <p className="text-gray-700 text-base">{address?.join(', ')}</p>
+      </div>
+      <div className="w-2/3 mx-8">
+        <a className="text-black" href={link} target="_blank" rel="noopener noreferrer">
+          <div className="font-bold text-xl my-2 text-black-400">{title}</div>
+        </a>
+        {date && (
+          <p className="text-gray-700 text-base my-2 font-bold">Event: {date.when}</p>
+        )}
+        <a className="font-bold text-sm my-2" href={link} target="_blank" rel="noopener noreferrer">Get Tickets</a>
+        {address && (
+          <p className="text-gray-700 text-base mb-2">{address.join(', ')}</p>
+        )}
+        <p className="text-gray-700 text-base mb-2">{description}</p>
       </div>
     </div>
   );
 }
-
 
 export default Card;
