@@ -13,11 +13,11 @@ image(s) goes here
 
 
 # Collaborators
-- Nicola Cahill @Bibbleboop
-- Daniela Herteg @Dani-Her
-- Aleeza Malik @babyleezus
-- Chaitanya Varma @curioushumans
-- Renee Buchanan @ReneeDanielleB
+- Nicola Cahill | @Bibbleboop
+- Daniela Herteg | @Dani-Her
+- Aleeza Malik | @babyleezus
+- Chaitanya Varma | @curioushumans
+- Renee Buchanan | @ReneeDanielleB
 
 
 # Technologies Used
@@ -25,6 +25,7 @@ image(s) goes here
 - Netlify
 - TailwindCSS UI
 - SerpAPI
+- Unsplash API
 - Node JS
 
 
