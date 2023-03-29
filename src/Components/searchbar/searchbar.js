@@ -2,20 +2,25 @@ import React, { useState } from 'react';
 import SerpApi from 'google-search-results-nodejs';
 import Card from '../cards/Card';
 import SearchButtons from '../searchbuttons/SearchButtons';
+import PageNumbers from '../pagenumbers/PageNumbers';
 
 function SearchBar(props) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [filter, setFilter] = useState('');
+  const [pageNumber, setPageNumber] = useState(1);
 
-
-  const search = () => {
+  const search = (query, filter, pageNumber) => {
     const search = new SerpApi.GoogleSearch("c454b774640a879beb6a843015825e7d8c4e98701f51969d6dd8e5906d392064");
     const params = {
       q: query,
       engine: "google_events",
-      htichips: filter
+      htichips: filter,
+      start: (pageNumber - 1) * 10
     };
+
+    console.log('params:', params);
+
     search.json(params, (data) => {
       setResults(data.events_results);
     });
@@ -27,13 +32,19 @@ function SearchBar(props) {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      search();
+      search(query, filter, pageNumber);
     }
   };
 
   const handleButtonClick = (filter) => {
     setFilter(filter);
-    search();
+    setPageNumber(1);
+    search(query, filter, 1);
+  };
+
+  const handlePageClick = (page) => {
+    setPageNumber(page);
+    search(query, filter, page);
   };
 
   return (
@@ -62,6 +73,7 @@ function SearchBar(props) {
           <Card key={result.id} {...result} />
         ))}
       </div>
+      <PageNumbers query={query} setResults={setResults} handlePageClick={handlePageClick} />
     </div>
   );
 }
