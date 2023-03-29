@@ -11,20 +11,20 @@ const ReactFooter=()=> {
       //             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
       //               <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
       //             </svg>
-      //             <span class="self-center text-2xl font-semibold">Eat-Rave-Love</span>
+      //             <span class="self-center text-2xl font-semibold"></span>
       //           </div>
       //         </a>
       //       </div>
       //     </div>
         
       //     <div class="col-span-6 text-center md:text-left md:col-span-3">
-      //       <p class="pb-1 text-lg font-medium">Contact Us</p>
+      //       <p class="pb-1 text-lg font-medium"></p>
       //         <ul>
       //           <li>
-      //             <p class="hover:dark:text-violet-400">1-800-EAT-RAVE-LOVE</p>
+      //             <p class="hover:dark:text-violet-400"></p>
       //           </li>
       //           <li>
-      //             <p class="hover:dark:text-violet-400">info@eat-rave-love.org</p>
+      //             <p class="hover:dark:text-violet-400"></p>
       //           </li>
       //           <li>
       //             <p class="hover:dark:text-violet-400">Form</p>
@@ -32,22 +32,22 @@ const ReactFooter=()=> {
       //         </ul>
       //     </div>
       //     <div class="col-span-6 text-center md:text-left md:col-span-3">
-      //       <p class="pb-1 text-lg font-medium">Contributors</p>
+      //       <p class="pb-1 text-lg font-medium"></p>
       //       <ul>
       //         <li>
-      //           <a rel="noopener noreferrer" href="https://github.com/Bibbleboop" class="hover:dark:text-violet-400">Nicola</a>
+      //           <a rel="noopener noreferrer" href="" class="hover:dark:text-violet-400">Nicola</a>
       //         </li>
       //         <li>
-      //           <a rel="noopener noreferrer" href="https://github.com/Dani-Her" class="hover:dark:text-violet-400">Daniela</a>
+      //           <a rel="noopener noreferrer" href="" class="hover:dark:text-violet-400">Daniela</a>
       //         </li>
       //         <li>
-      //           <a rel="noopener noreferrer" href="https://github.com/curioushumans" class="hover:dark:text-violet-400">Chaitanya</a>
+      //           <a rel="noopener noreferrer" href="" class="hover:dark:text-violet-400">Chaitanya</a>
       //         </li>
       //         <li>
-      //           <a rel="noopener noreferrer" href="https://github.com/babyleezus" class="hover:dark:text-violet-400">Aleeza</a>
+      //           <a rel="noopener noreferrer" href="" class="hover:dark:text-violet-400">Aleeza</a>
       //         </li>
       //         <li>
-      //           <a rel="noopener noreferrer" href="https://github.com/ReneeDanielleB" class="hover:dark:text-violet-400">Renee</a>
+      //           <a rel="noopener noreferrer" href="" class="hover:dark:text-violet-400">Renee</a>
       //         </li>
       //       </ul>
       //     </div>
@@ -96,46 +96,37 @@ const ReactFooter=()=> {
                     <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
                   </svg>
                 </div>
-                <span className="self-center text-2xl font-semibold">Brand name</span>
+                <span className="self-center text-2xl font-semibold">Eat-Rave-Love</span>
               </a>
             </div>
             <div className="col-span-6 text-center md:text-left md:col-span-3">
-              <p className="pb-1 text-lg font-medium">Category</p>
+              <p className="pb-1 text-lg font-medium">Contact Us</p>
               <ul>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">1-800-EAT-RAVE-LOVE</a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
-                </li>
-                <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
-                </li>
-                <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
-                </li>
-                <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">info@eat-rave-love.org</a>
                 </li>
               </ul>
             </div>
             <div className="col-span-6 text-center md:text-left md:col-span-3">
-              <p className="pb-1 text-lg font-medium">Category</p>
+              <p className="pb-1 text-lg font-medium">Contributors</p>
               <ul>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="https://github.com/Bibbleboop" className="hover:dark:text-violet-400">Nicola</a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="https://github.com/Dani-Her" className="hover:dark:text-violet-400">Daniela</a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="https://github.com/curioushumans" className="hover:dark:text-violet-400">Chaitanya</a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="https://github.com/babyleezus" className="hover:dark:text-violet-400">Aleeza</a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Link</a>
+                  <a rel="noopener noreferrer" href="https://github.com/ReneeDanielleB" className="hover:dark:text-violet-400">Renee</a>
                 </li>
               </ul>
             </div>
@@ -146,8 +137,11 @@ const ReactFooter=()=> {
               <a rel="noopener noreferrer" href="/">
                 <span>Privacy policy</span>
               </a>
-              <a rel="noopener noreferrer" href="/">
+              <a rel="noopener noreferrer" href="/terms">
                 <span>Terms of service</span>
+              </a>
+              <a rel="noopener noreferrer" href="/cookies">
+                <span>Cookies</span>
               </a>
             </div>
             <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
