@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactFooter from './Components/footer/ReactFooter';
 // import Header from './Components/header/Header';
 // import Main from './Components/main/Main';
-import SearchBar from './Components/searchbar/searchbar'
+import SearchBar from './Components/searchbar/SearchBar'
 // import ContactUs from './Components/contactus/ContactUs';
 
 
@@ -31,8 +31,3 @@ function App() {
 }
 
 export default App;
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
