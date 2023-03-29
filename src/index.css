@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -17,7 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-:root { 
+
     /* --font1: #000000; /*Black */
     /* --font2: #FFFFFF; White  */
     /* --font3: #1F2833; Bunker   */
@@ -32,8 +32,6 @@ code {
     /* --color5: #2F4454 Dark Blue */
     /* --color6: #DA7B93 Light Pink */
     /* --color7: #376E6F Dark Cyan */ 
-
-} 
 
 .form {
   margin: 5px;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+// import React from 'react';
 
 import ReactFooter from './Components/footer/ReactFooter';
 // import Header from './Components/header/Header';
@@ -32,6 +33,7 @@ function App() {
         </div>
       </div>
       {/* <ContactUs /> */}
+      <About />
       <ReactFooter />
     </div>
   );

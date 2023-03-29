@@ -32,21 +32,21 @@
 //         console.log(formData);
 //     };
 
-    return (
-        <>
-        <h2 name='contactUs' style={styles.header}>Contact Us</h2>
-        {/* <p> Sign up for our Exclusive Mailer</p> */}
-        <form onSubmit={handleSubmit}>
-            <input name='name' onChange={handleChange}
-            type="text" placeholder="Your Name" />
-            <input name='email' onChange={handleChange}
-            type="text" placeholder="Your Email" />
-            <textarea name='message' onChange={handleChange} placeholder="Your Message to Us.." cols="22" rows="7" ></textarea>
-        <button style={styles.submitBtn}>Submit Message</button>
-        </form>
-        </>
-    )
-    }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<ContactUs/>);
-export default ContactUs;
+//     return (
+//         <>
+//         <h2 name='contactUs' style={styles.header}>Contact Us</h2>
+//         {/* <p> Sign up for our Exclusive Mailer</p> */}
+//         <form onSubmit={handleSubmit}>
+//             <input name='name' onChange={handleChange}
+//             type="text" placeholder="Your Name" />
+//             <input name='email' onChange={handleChange}
+//             type="text" placeholder="Your Email" />
+//             <textarea name='message' onChange={handleChange} placeholder="Your Message to Us.." cols="22" rows="7" ></textarea>
+//         <button style={styles.submitBtn}>Submit Message</button>
+//         </form>
+//         </>
+//     )
+//     }
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<ContactUs/>);
+// export default ContactUs;

@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -29,8 +32,13 @@ code {
     --color5: #2F4454 /* Dark Blue */
     --color6: #DA7B93 /* Light Pink*/
     --color7: #376E6F /* Dark Cyan */
+}
 
-@layer base {
+    .selected {
+        background-color: red;
+      }
+
+  @layer base {
   li {
     @apply p-4
   }
@@ -39,8 +47,4 @@ code {
     @apply text-slate-200 border bg-sky-600 border-sky-600
     hover:bg-transparent hover:text-sky-600 rounded-md
   }
-}
-
-    .selected {
-      background-color: red;
-    }
+  }

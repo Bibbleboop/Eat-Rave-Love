@@ -1,15 +1,29 @@
-import React, { useState } from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+     const handleClick = () => {
+    scroll.scrollTo(1000, {
+      duration: 500,
+      delay: 100,
+      smooth: 'easeInOutQuart'
+    });
+  }
 
     const handleClose =()=> setNav(!nav)
 
+
     return (
+
+    <div>
+      <Link to="myElement" smooth={true} duration={500}>Scroll to element</Link>
+      <button onClick={handleClick}>Scroll to position 1000</button>
+      <div id="myElement">This is my element</div>
+    
+
         <div className='w-screen h-[80px] z-10 bg-cyan-900 fixed drop-shadow-lg'>
             <div className='px-2 flex justify-between items-center w-full h-full'>
                 <div className='flex items-center'>
@@ -39,8 +53,9 @@ const Navbar = () => {
                 </div>
             </ul>
         </div>
+        </div>
     );
 };
 
 
-export default Navbar 
+export default Navbar;
