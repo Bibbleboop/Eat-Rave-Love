@@ -13,7 +13,7 @@ const SearchButtons = ({ setFilter }) => {
     
     <div className="m-6 space-x-4">
   <button
-    className={`flex-shrink-0 bg-blue-500 hover:bg-red-700 text-sm text-white py-1 px-2 rounded ${selectedButton === 'date:today' ? 'selected bg-red-500' : ''}`}
+    className={`flex-shrink-0 bg-blue-500 hover:bg-red-700 text-sm text-white py-1 px-2 rounded-xl ${selectedButton === 'date:today' ? 'selected bg-red-500' : ''}`}
     type="button"
     onClick={() => handleButtonClick('date:today')}
   >
