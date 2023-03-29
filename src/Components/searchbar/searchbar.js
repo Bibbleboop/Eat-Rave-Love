@@ -7,7 +7,7 @@ function SearchBar() {
   const [results, setResults] = useState([]);
 
 const search = () => {
-  const search = new SerpApi.GoogleSearch("c454b774640a879beb6a843015825e7d8c4e98701f51969d6dd8e5906d392064");
+  const search = new SerpApi.GoogleSearch("ecddabef330026be1f232884374692bbb15da48b06725cb8062df86df6d9dad3");
   const params = {
         q: query,
     engine: "google_events",
