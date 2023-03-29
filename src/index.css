@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -17,7 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-:root { 
+
     /* --font1: #000000; /*Black */
     /* --font2: #FFFFFF; White  */
     /* --font3: #1F2833; Bunker   */
@@ -33,8 +33,6 @@ code {
     /* --color6: #DA7B93 Light Pink */
     /* --color7: #376E6F Dark Cyan */ 
 
-} 
-
 .form {
   margin: 5px;
   border: solid 2px #1F2833;
@@ -43,3 +41,14 @@ code {
     margin: 5px;
     border: solid 2px #1F2833; 
   } 
+
+  @layer base {
+    li {
+      @apply p-4
+    }
+  
+    button {
+      @apply text-slate-200 border bg-sky-600 border-sky-600
+      hover:bg-transparent hover:text-sky-600 rounded-md
+    }
+  }

@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -29,18 +32,19 @@ code {
     --color5: #2F4454 /* Dark Blue */
     --color6: #DA7B93 /* Light Pink*/
     --color7: #376E6F /* Dark Cyan */
-
-} 
-
-.form {
-  margin: 5px;
-  border: solid 2px #1F2833;
-  } 
-.textarea {
-    margin: 5px;
-    border: solid 2px #1F2833; 
-  } 
+}
 
     .selected {
-      background-color: red;
-    }
+        background-color: red;
+      }
+
+  @layer base {
+  li {
+    @apply p-4
+  }
+
+  button {
+    @apply text-slate-200 border bg-sky-600 border-sky-600
+    hover:bg-transparent hover:text-sky-600 rounded-md
+  }
+  }
