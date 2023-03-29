@@ -2,7 +2,7 @@ import React from "react";
 
 const ReactFooter=()=>{
     return (
-            <footer class="py-6 dark:bg-gray-800 dark:text-gray-50">
+            <footer name='footer' class="py-6 dark:bg-gray-800 dark:text-gray-50">
         <div class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
             <div class="grid grid-cols-12">
                 <div class="pb-6 col-span-full md:pb-0 md:col-span-6">

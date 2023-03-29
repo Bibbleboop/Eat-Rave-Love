@@ -1,19 +1,17 @@
 import React from 'react';
-import SearchBar from './Components/searchbar/SearchBar';
 import ReactFooter from './Components/footer/ReactFooter';
-import Header from './Components/header/Header';
-import Main from './Components/main/Main';
 import ContactUs from './Components/contactus/ContactUs';
+import Navbar from './Components/landing/Navbar';
+import Hero from './Components/landing/Hero';
+import About from './Components/landing/About';
+
 
 function App() {
   return (
     <div className="App">
-      <Header /> 
-      <Main />  
-        <h1 className="text-3xl text-center text-cyan-600 m-6">Search Events, Clubs, Raves & much more!</h1>
-        <div className="container mx-auto my-4">
-          <SearchBar />
-        </div>
+      <Navbar />
+      <Hero />
+      <About />
       <ContactUs />
       <ReactFooter />
     </div>
