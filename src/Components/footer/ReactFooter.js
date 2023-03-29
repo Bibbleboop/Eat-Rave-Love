@@ -19,10 +19,10 @@ const ReactFooter=()=> {
               <p className="pb-1 text-lg font-medium">Contact Us</p>
               <ul>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">1-800-EAT-RAVE-LOVE</a>
+                  <p className="hover:dark:text-violet-400">1-800-EAT-RAVE-LOVE</p>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">info@eat-rave-love.org</a>
+                  <p className="hover:dark:text-violet-400">info@eat-rave-love.org</p>
                 </li>
               </ul>
             </div>
