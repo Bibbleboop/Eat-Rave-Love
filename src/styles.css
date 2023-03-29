@@ -42,3 +42,7 @@ code {
     margin: 5px;
     border: solid 2px #1F2833; 
   } 
+
+    .selected {
+      background-color: red;
+    }

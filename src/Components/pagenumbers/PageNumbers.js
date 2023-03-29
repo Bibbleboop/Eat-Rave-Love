@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function PageNumbers(props) {
-  const { handlePageClick } = props;
+  const { handlePageClick, pageNumber } = props;
+
+  const [currentPage, setCurrentPage] = useState(pageNumber);
 
   const handleButtonClick = (start) => {
     handlePageClick(start);
+    setCurrentPage(start);
   };
 
   return (
@@ -12,19 +15,20 @@ function PageNumbers(props) {
       <nav className="block">
         <ul className="flex pl-0 rounded list-none flex-wrap space-x-4">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((start) => (
-<li key={start}>
-<button
-className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
-onClick={() => handleButtonClick(start)}
->
-{start}
-</button>
-</li>
-))}
-</ul>
-</nav>
-</div>
-);
+            <li key={start}>
+              <button
+                className={`bg-${start === currentPage ? 'red' : 'blue'}-500 hover:bg-${start === currentPage ? 'red' : 'blue'}-700 text-white font-bold py-2 px-4 border border-${start === currentPage ? 'red' : 'blue'}-700 rounded ${start === currentPage ? 'selected' : ''}`}
+                onClick={() => handleButtonClick(start)}
+              >
+                {start}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  );
 }
 
 export default PageNumbers;
+
