@@ -13,11 +13,11 @@ image(s) goes here
 
 
 # Collaborators
-- Nicola Cahill | @Bibbleboop
-- Daniela Herteg | @Dani-Her
-- Aleeza Malik | @babyleezus
-- Chaitanya Varma | @curioushumans
-- Renee Buchanan | @ReneeDanielleB
+- Nicola Cahill | GitHub - @Bibbleboop
+- Daniela Herteg | GitHub - @Dani-Her
+- Aleeza Malik | GitHub - @babyleezus
+- Chaitanya Varma | GitHub - @curioushumans
+- Renee Buchanan | GitHub - @ReneeDanielleB
 
 
 # Technologies Used
