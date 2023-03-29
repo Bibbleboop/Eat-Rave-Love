@@ -62,7 +62,7 @@ return (
        onKeyDown={handleKeyDown}
      />
 <button
-className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"
+className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded-xl focus:outline-none focus:shadow-outline"
 type="button"
 onClick={() => search(query, filter, pageNumber)} // Pass search function to onClick
 >

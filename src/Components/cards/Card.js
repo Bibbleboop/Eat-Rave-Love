@@ -2,7 +2,7 @@ import React from 'react';
 
 function Card({ title, date, address, link, image, description }) {
   return (
-    <div className="w-full mx-auto my-4 rounded overflow-hidden shadow-lg flex">
+    <div className="w-full mx-auto my-4 rounded-xl overflow-hidden shadow-lg flex">
       <div className="w-1/3">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="w-full h-48 object-cover" src={image} alt={title} />
