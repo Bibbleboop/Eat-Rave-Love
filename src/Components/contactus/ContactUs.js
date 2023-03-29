@@ -34,7 +34,7 @@
 
 //     return (
 //         <>
-//         <h2 style={styles.header}>Contact Us</h2>
+//         <h2 name='contactUs' style={styles.header}>Contact Us</h2>
 //         {/* <p> Sign up for our Exclusive Mailer</p> */}
 //         <form onSubmit={handleSubmit}>
 //             <input name='name' onChange={handleChange}
