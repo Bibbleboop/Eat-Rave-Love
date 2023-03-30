@@ -11,10 +11,6 @@ function App() {
 const [setFilter] = useState("");
 
 
-  // const handleSearchInputChange = (event) => {
-  //   setFilter(event.target.value);
-  // }
-
   return (
     <div className="App">
       <Navbar />
