@@ -16,13 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> 
-      <Main />   */}
       <Navbar />
       <Hero />
-      {/* <h1 className="text-3xl text-center text-cyan-600 m-6">
-        Search Events, Clubs, Raves & much more!
-      </h1> */}
+      <About />
       <div>
         <input
           type="text"
@@ -33,7 +29,7 @@ function App() {
           <SearchBar setFilter={setFilter} />
         </div>
       </div>
-      <About />
+
       <SavedCards />
       <ReactFooter />
     </div>
