@@ -52,3 +52,9 @@ code {
       hover:bg-transparent hover:text-sky-600 rounded-md
     }
   }
+
+  /* For the buttons color change when selected and in active state */
+  .selected {
+    background-color: red;
+    color: white;
+  }

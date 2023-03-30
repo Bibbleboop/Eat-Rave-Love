@@ -32,9 +32,6 @@ function ContactUs() {
           message: "",
         });
       },
-      (error) => {
-        console.log("FAILED...", error);
-      }
     );
   };
 
@@ -49,7 +46,7 @@ function ContactUs() {
             onChange={handleChange}
             type="text"
             placeholder="Your Name"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-4">
@@ -59,7 +56,7 @@ function ContactUs() {
             onChange={handleChange}
             type="email"
             placeholder="Your Email"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-4">
@@ -70,13 +67,13 @@ function ContactUs() {
             placeholder="Your Message to Us.."
             cols="22"
             rows="7"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           ></textarea>
         </div>
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-cyan-900 outline hover:bg-cyan-950 hover:text-white text-white font-bold py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline"
           >
             Submit Message
           </button>
