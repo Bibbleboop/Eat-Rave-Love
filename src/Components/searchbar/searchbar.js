@@ -4,7 +4,7 @@ import Card from "../cards/Card";
 import SearchButtons from "../searchbuttons/SearchButtons";
 import PageNumbers from "../pagenumbers/PageNumbers";
 
-function searchbar(props) {
+function SearchBar(props) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [filter, setFilter] = useState("");
@@ -99,4 +99,4 @@ function searchbar(props) {
   );
 }
 
-export default searchbar;
+export default SearchBar;
