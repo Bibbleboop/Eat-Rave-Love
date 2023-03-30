@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HeartIcon } from "@heroicons/react/solid";
+import { CiBeerMugFull } from "react-icons/ci";
 
 function Faves({
   id,
@@ -9,30 +9,26 @@ function Faves({
   link,
   image,
   description,
+  event_location_map,
   setSavedCards,
   cards = [],
-   // assuming you pass the `cards` prop
 }) {
   const [isFave, setIsFave] = useState(false);
 
   const handleFaveClick = () => {
     setIsFave(!isFave);
     if (!isFave) {
-      const card = { id, title, date, address, link, image, description };
+      const card = { id, title, date, event_location_map, address, link, image, description };
       onAdd(card);
     } else {
       handleRemoveFaveCard(id);
     }
   };
 
-
-
   const onAdd = (card) => {
     const faveCards = JSON.parse(localStorage.getItem("faves") || "[]");
     const newFaveCards = [...faveCards, card];
     localStorage.setItem("faves", JSON.stringify(newFaveCards));
-    console.log("Added card to faves:", card);
-    console.log("New faves list:", newFaveCards);
   };
 
   const handleRemoveFaveCard = (id) => {
@@ -42,15 +38,16 @@ function Faves({
     localStorage.setItem("faves", JSON.stringify(newFaveCards));
   };
 
+
   return (
     <>
       {isFave || cards.some((card) => card.id === id) ? (
-        <button onClick={handleFaveClick}>
-          <HeartIcon className="text-red-500 h-6 w-6" />
+        <button onClick={handleFaveClick} style={{ border: "none" }}>
+          <CiBeerMugFull className="bg-cyan-950 text-yellow-500 h-10 w-10" />
         </button>
       ) : (
-        <button onClick={handleFaveClick}>
-          <HeartIcon className="text-gray-500 h-6 w-6" />
+        <button onClick={handleFaveClick} style={{ border: "none" }}>
+          <CiBeerMugFull className="bg-cyan-950 hover:bg-cyan-950 color-cyan-950 border-black h-10 w-10" />
         </button>
       )}
     </>

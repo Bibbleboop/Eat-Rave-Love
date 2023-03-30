@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="w-screen h-[80px] z-10 bg-cyan-900 fixed drop-shadow-lg">
+      <div className="w-screen h-[120px] z-10 bg-cyan-950 fixed drop-shadow-lg">
         <div className="px-2 flex justify-between items-center w-full h-full">
           <div className="flex items-center">
             <img
@@ -26,15 +26,15 @@ const Navbar = () => {
               alt="logo"
             />
 
-            <ul className="hidden md:flex text-slate-200  cursor-pointer">
+            <ul className="hidden md:flex text-white font-bold text-2xl  cursor-pointer">
               <li>
                 <Link to="home" smooth={true} duration={500}>
-                  Home
+                  HOME
                 </Link>
               </li>
               <li>
                 <Link to="about" smooth={true} offset={-200} duration={500}>
-                  About
+                  ABOUT
                 </Link>
               </li>
               <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
                   offset={-100}
                   duration={500}
                 >
-                  Favourites
+                  FAVOURITES
                 </Link>
               </li>
               <li>
@@ -54,7 +54,7 @@ const Navbar = () => {
                   offset={-100}
                   duration={500}
                 >
-                  Contact Us
+                  CONTACT US
                 </Link>
               </li>
             </ul>

@@ -27,11 +27,8 @@ code {
     }
   }
 
-
-                                .selected {
-                                  background-color: red;
-                                }
-
-                                                                .h-screen {
-                                                                  height: 83vh;
-                                                                }
+  /* For the buttons color change when selected and in active state */
+  .selected {
+    background-color: red;
+    color: white;
+  }
