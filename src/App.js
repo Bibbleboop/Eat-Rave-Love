@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from './Components/searchbar/SearchBar';
+import SearchBar from './Components/searchbar/searchbar';
 import ReactFooter from './Components/footer/ReactFooter';
 import Header from './Components/header/Header';
 import Main from './Components/main/Main';
