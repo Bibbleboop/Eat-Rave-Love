@@ -18,11 +18,17 @@ function App() {
     <div className="App">
       {/* <Header /> 
       <Main />   */}
-            <Navbar />
+      <Navbar />
       <Hero />
-      <h1 className="text-3xl text-center text-cyan-600 m-6">Search Events, Clubs, Raves & much more!</h1>
+      {/* <h1 className="text-3xl text-center text-cyan-600 m-6">
+        Search Events, Clubs, Raves & much more!
+      </h1> */}
       <div>
-        <input type="text" id="search-input" onChange={handleSearchInputChange}></input>
+        <input
+          type="text"
+          id="search-input"
+          onChange={handleSearchInputChange}
+        ></input>
         <div className="container mx-auto my-4 flex flex-col">
           <SearchBar setFilter={setFilter} />
         </div>
