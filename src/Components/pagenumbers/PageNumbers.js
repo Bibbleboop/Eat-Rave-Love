@@ -17,7 +17,7 @@ function PageNumbers(props) {
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((start) => (
             <li key={start}>
               <button
-                className={`bg-${start === currentPage ? 'black' : 'cyan'}-500 hover:bg-${start === currentPage ? 'black' : 'cyan'}-700 text-white font-bold py-2 px-4 border border-${start === currentPage ? 'black' : 'cyan'}-700 rounded ${start === currentPage ? 'selected' : ''}`}
+                className={`bg-${start === currentPage ? 'red' : 'blue'}-500 hover:bg-${start === currentPage ? 'red' : 'blue'}-700 text-white font-bold py-2 px-4 border border-${start === currentPage ? 'red' : 'blue'}-700 rounded ${start === currentPage ? 'selected' : ''}`}
                 onClick={() => handleButtonClick(start)}
               >
                 {start}

@@ -53,18 +53,18 @@ function searchbar(props) {
 
   return (
     <div>
-      <div className="flex items-center border-b border-b-2 border-cyan-950 py-2">
+      <div className="flex items-center border-b border-b-2 border-blue-500 py-2">
         <input
           className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
           type="text"
-          placeholder="Search Events, Clubs, Raves & much more!"
+          placeholder="Search events"
           aria-label="Search"
           value={query}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
         />
         <button
-          className="flex-shrink-0 bg-cyan-950 hover:bg-cyan-800 border-cyan-950 hover:border-cyan-800 text-sm border-4 text-white py-1 px-2 rounded-xl focus:outline-none focus:shadow-outline"
+          className="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded-xl focus:outline-none focus:shadow-outline"
           type="button"
           onClick={() => search(query, filter, pageNumber)} // Pass search function to onClick
         >
