@@ -26,6 +26,7 @@ image(s) goes here
 - TailwindCSS UI
 - SerpAPI
 - Unsplash API
+- EmailJS
 - Node JS
 
 
