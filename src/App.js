@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactFooter from './Components/footer/ReactFooter';
-import SearchBar from './Components/searchbar/SearchBar'
+import SearchBar from './Components/searchbar/searchbar'
 import Navbar from './Components/landing/Navbar';
 import Hero from './Components/landing/Hero';
 import About from './Components/landing/About';
