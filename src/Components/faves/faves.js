@@ -1,28 +1,58 @@
-import React, { useState } from 'react';
-import FavButton from './favBtn';
-import FavouriteBorder from '@material-ui/icons/FavoriteBorder';
-import Favourite from '@material-ui/icons/Favorite';
+import React, { useState } from "react";
+import { HeartIcon } from "@heroicons/react/solid";
 
-let Faves = ({ id }) => {
-    let [storageItem, setStorageItem] = useState(() => JSON.parse(localStorage.getItem("faves") || "[]"));
-    let isFavourited = storageItem.includes(id);
-    let handleToggleFavourite = () => { 
-        if (!isFavourited) {
-            let newStorageItem = [...storageItem, id];
-            setStorageItem(newStorageItem);
-            localStorage.setItem("faves", JSON.stringify(newStorageItem))
-        } else {
-            let newStorageItem = storageItem.filter((savedId) => savedId !== id);
-            setStorageItem(newStorageItem);
-            localStorage.setItem("faves", JSON.stringify(newStorageItem))
-        }
+function Faves({
+  id,
+  title,
+  date,
+  address,
+  link,
+  image,
+  description,
+  setSavedCards,
+  cards = [],
+   // assuming you pass the `cards` prop
+}) {
+  const [isFave, setIsFave] = useState(false);
+
+  const handleFaveClick = () => {
+    setIsFave(!isFave);
+    if (!isFave) {
+      const card = { id, title, date, address, link, image, description };
+      onAdd(card);
+    } else {
+      handleRemoveFaveCard(id);
     }
+  };
 
-    return (
-        <FavButton onClick={handleToggleFavourite}>
-            {isFavourited ? <Favourite color="error" /> : <FavouriteBorder  color="error" />} 
-        </FavButton>
-    );
-};
+  const onAdd = (card) => {
+    const faveCards = JSON.parse(localStorage.getItem("faves") || "[]");
+    const newFaveCards = [...faveCards, card];
+    localStorage.setItem("faves", JSON.stringify(newFaveCards));
+    console.log("Added card to faves:", card);
+    console.log("New faves list:", newFaveCards);
+  };
+
+  const handleRemoveFaveCard = (id) => {
+    const faveCards = JSON.parse(localStorage.getItem("faves") || "[]");
+    const newFaveCards = faveCards.filter((card) => card.id !== id);
+    setSavedCards(newFaveCards);
+    localStorage.setItem("faves", JSON.stringify(newFaveCards));
+  };
+
+  return (
+    <>
+      {isFave || cards.some((card) => card.id === id) ? (
+        <button onClick={handleFaveClick}>
+          <HeartIcon className="text-red-500 h-6 w-6" />
+        </button>
+      ) : (
+        <button onClick={handleFaveClick}>
+          <HeartIcon className="text-gray-500 h-6 w-6" />
+        </button>
+      )}
+    </>
+  );
+}
 
 export default Faves;

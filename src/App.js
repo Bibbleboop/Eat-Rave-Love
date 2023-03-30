@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-// import React from 'react';
-
 import ReactFooter from './Components/footer/ReactFooter';
-// import Header from './Components/header/Header';
-// import Main from './Components/main/Main';
-import SearchBar from './Components/searchbar/searchbar'
-// import ContactUs from './Components/contactus/ContactUs';
+import SearchBar from './Components/searchbar/SearchBar'
 import Navbar from './Components/landing/Navbar';
 import Hero from './Components/landing/Hero';
 import About from './Components/landing/About';
-
+import SavedCards from "./Components/savedcards/SavedCards";
 
 
 function App() {
@@ -32,8 +27,8 @@ function App() {
           <SearchBar setFilter={setFilter} />
         </div>
       </div>
-      {/* <ContactUs /> */}
       <About />
+      <SavedCards />
       <ReactFooter />
     </div>
   );
