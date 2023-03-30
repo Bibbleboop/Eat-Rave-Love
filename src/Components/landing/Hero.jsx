@@ -1,7 +1,4 @@
 import React from 'react'
-import SearchBar from '../searchbar/SearchBar'
-
-
 
 const Hero = () => {
     return (
@@ -12,14 +9,9 @@ const Hero = () => {
                     <h1 className='py-3 text-5xl md:text-7xl font-bold text-slate-200'>Events, Concerts, Restaurants</h1>
                     <p className='text-2xl text-slate-200'>And so much more</p>
                 </div>
-                <div className='absolute flex flex-col py-2 md:min-w-[760px] bottom-[5%]
-            mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200
-            border border-sky-500 rounded-xl text-center shadow-xl shadow-sky-800'>
-                    <SearchBar />
-                </div>
-            </div>
+               </div>
         </div>
     )
 }
 
-export default Hero
+export default Hero;
