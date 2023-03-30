@@ -25,6 +25,8 @@ function Faves({
     }
   };
 
+
+
   const onAdd = (card) => {
     const faveCards = JSON.parse(localStorage.getItem("faves") || "[]");
     const newFaveCards = [...faveCards, card];
