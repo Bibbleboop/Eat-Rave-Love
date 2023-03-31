@@ -26,7 +26,7 @@ const Navbar = () => {
               alt="logo"
             />
 
-            <ul className="hidden md:flex text-white font-bold text-2xl  cursor-pointer">
+            <ul className="hidden md:flex text-white text-2xl  cursor-pointer">
               <li>
                 <Link to="home" smooth={true} duration={500}>
                   HOME
