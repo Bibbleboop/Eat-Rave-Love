@@ -4,8 +4,8 @@ import SearchBar from './Components/searchbar/searchbar'
 import Navbar from './Components/landing/Navbar';
 import Hero from './Components/landing/Hero';
 import About from './Components/landing/About';
-import SavedCards from "./Components/savedcards/SavedCards";
-import Favicon from "react-favicon";
+import SavedCards from './Components/savedcards/SavedCards';
+// import Favicon from "react-favicon";
 
 function App() {
 const [setFilter] = useState("");
@@ -22,7 +22,7 @@ const [setFilter] = useState("");
       </div>
 
       <SavedCards />
-      <Favicon url="http://oflisback.github.io/react-favicon/img/github.ico" />
+      {/* <Favicon url="http://oflisback.github.io/react-favicon/img/github.ico" /> */}
       <ReactFooter />
     </div>
   );
