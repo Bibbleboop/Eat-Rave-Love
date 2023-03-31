@@ -44,7 +44,7 @@ function SavedCards() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto mt-10" id="fav">
+    <div className="max-w-4xl mx-auto mt-10">
       <h1 className="text-3xl font-bold text-center mb-10">Saved Events</h1>
       {savedCards.length === 0 && (
         <p className="text-center text-lg">No saved events yet.</p>

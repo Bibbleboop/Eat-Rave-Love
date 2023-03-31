@@ -1,19 +1,20 @@
-import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-
-  const handleClick = () => {
+    const [nav, setNav] = useState(false)
+     const handleClick = () => {
     scroll.scrollTo(1000, {
       duration: 500,
       delay: 100,
-      smooth: "easeInOutQuart",
+      smooth: 'easeInOutQuart'
     });
-  };
+  }
 
-  const handleClose = () => setNav(false);
+    const handleClose =()=> setNav(!nav)
+
 
   return (
     <div>
@@ -66,49 +67,58 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-          <li className="border-b-2 border-zinc-300 w-full">
-            <Link onClick={handleClose} to="home" smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li className="border-b-2 border-zinc-300 w-full">
-            <Link
-              onClick={handleClose}
-              to="about"
-              smooth={true}
-              offset={-200}
-              duration={500}
-            >
-              About
-            </Link>
-          </li>
-          <li className="border-b-2 border-zinc-300 w-full">
-            <Link
-              onClick={handleClose}
-              to="footer"
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              Footer
-            </Link>
-          </li>
-          <li className="border-b-2 border-zinc-300 w-full">
-            <Link
-              onClick={handleClose}
-              to="contactUs"
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
+          <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+            <li className="border-b-2 border-zinc-300 w-full">
+              <Link
+                onClick={handleClose}
+                to="home"
+                smooth={true}
+                duration={500}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="border-b-2 border-zinc-300 w-full">
+              <Link
+                onClick={handleClose}
+                to="about"
+                smooth={true}
+                offset={-200}
+                duration={500}
+              >
+                About
+              </Link>
+            </li>
+            <li className="border-b-2 border-zinc-300 w-full">
+              <Link
+                onClick={handleClose}
+                to="footer"
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Footer
+              </Link>
+            </li>
+            <li className="border-b-2 border-zinc-300 w-full">
+              <Link
+                onClick={handleClose}
+                to="contactUs"
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Contact Us
+              </Link>
+            </li>
+            <div className="flex flex-col my-4">
+              <button className="px-8 py-3">Favourites</button>
+            </div>
+          </ul>
+        </div>
       </div>
-    </div>
-  );
+    );
 };
+
 
 export default Navbar;

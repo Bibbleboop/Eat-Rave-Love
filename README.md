@@ -23,9 +23,11 @@ image(s) goes here
 # Technologies Used
 - React
 - Netlify
+- React Scroll
 - TailwindCSS UI
 - SerpAPI
 - Unsplash API
+- EmailJS
 - Node JS
 
 

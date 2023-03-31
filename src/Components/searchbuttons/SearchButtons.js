@@ -14,6 +14,7 @@ const SearchButtons = ({ setFilter }) => {
     <div className="m-6 space-x-4">
   <button
     className={`flex-shrink-0 bg-cyan-950 hover:bg-slate-700 hover:text-white  text-sm text-white py-1 px-2 rounded-xl border-none ${selectedButton === 'date:today' ? 'selected bg-slate-500' : ''}`}
+
     type="button"
     onClick={() => handleButtonClick('date:today')}
   >
@@ -21,6 +22,7 @@ const SearchButtons = ({ setFilter }) => {
   </button>
   <button
     className={`flex-shrink-0 bg-cyan-950 hover:bg-slate-700 hover:text-white text-sm text-white py-1 px-2 rounded-xl border-none ${selectedButton === 'date:tomorrow' ? 'selected bg-slate-500' : ''}`}
+    className={`flex-shrink-0 bg-blue-500 hover:bg-red-700 text-sm text-white py-1 px-2 rounded ${selectedButton === 'date:tomorrow' ? 'selected bg-red-500' : ''}`}
     type="button"
     onClick={() => handleButtonClick('date:tomorrow')}
   >
@@ -56,6 +58,7 @@ const SearchButtons = ({ setFilter }) => {
       </button>
       <button
     className={`flex-shrink-0 bg-cyan-950 hover:bg-slate-700 hover:text-white text-sm text-white py-1 px-2 rounded-xl border-none ${selectedButton === 'event_type:Virtual-Event' ? 'selected bg-slate-500' : ''}`}
+
         type="button"
         onClick={() => handleButtonClick('event_type:Virtual-Event')}
       >

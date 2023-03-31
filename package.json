@@ -9,7 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "babel-plugin-macros": "^3.1.0",
+    "emailjs": "^4.0.1",
     "emailjs-com": "^3.2.0",
     "google-search-results-nodejs": "^2.1.0",
     "postcss-flexbugs-fixes": "^5.0.2",

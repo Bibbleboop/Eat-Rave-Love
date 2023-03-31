@@ -8,9 +8,15 @@ const ReactFooter = () => {
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-4">
             <div className="pb-6 col-span-full md:pb-0 md:col-span-6">
-              <div>
-                <img src={require("../logodesign/logo.png")} className="logo" alt="logo" />
-              </div>
+              <div
+                style={{
+                  backgroundImage: "url('..')",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "100%",
+                  opacity: ".9",
+                }}
+                className="logo"
+              ></div>
             </div>
           </div>
           <div className="col-span-4">

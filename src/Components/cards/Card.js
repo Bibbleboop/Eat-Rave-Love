@@ -4,7 +4,7 @@ import Faves from "../faves/faves";
 
 function Card({ title, date, address, link, image, description, event_location_map, id }) {
   return (
-    <div className="w-full mx-auto my-4 rounded-xl overflow-hidden shadow-lg flex bg-cyan-950">
+    <div className="w-full mx-auto my-4 rounded-xl overflow-hidden shadow-lg flex">
       <div className="w-1/3">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="w-full h-52 object-cover" src={image} alt={title} />
