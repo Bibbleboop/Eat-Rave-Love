@@ -46,15 +46,11 @@ code {
     li {
       @apply p-4
     }
-  
-    button {
-      @apply text-slate-200 border bg-sky-600 border-sky-600
-      hover:bg-transparent hover:text-sky-600 rounded-md
-    }
   }
 
   /* For the buttons color change when selected and in active state */
   .selected {
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: #163242;
+    border-color: #163242;
   }

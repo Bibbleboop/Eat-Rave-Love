@@ -10,7 +10,6 @@ import Favicon from "react-favicon";
 function App() {
 const [setFilter] = useState("");
 
-
   return (
     <div className="App">
       <Navbar />
